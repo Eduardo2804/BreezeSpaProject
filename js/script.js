@@ -1,5 +1,10 @@
 const submit  = document.querySelector('#submit');
+window.alert("Testing");
 
+function registerUser() {
+    let firstName  = document.querySelector('#firstName');
+    console.log(firstName)
+}
 
 const saveUser = async() =>  { 
 
