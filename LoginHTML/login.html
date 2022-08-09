@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/styles.css"
+</head>
+  <body>
+     <h1>Login</h1>
+     <form class="login">
+      <div class="label-float">
+      <input type="email" name="email" id="email" placeholder="Enter your email" autocapitalize="off" >
+      </div>
+      <div class="label-float">
+        <input type="password" name="password" id="password" placeholder="Enter password">
+      </div>
+        <div class="error" id="errorLogin"></div>
+        <button onclick="login()">Continue</button> 
+        <div id="register-container">
+          <p>Register User</p>
+          <a href="/RegisterUser/User.html" id="register">Sign in</a>
+        </div>  
+     </form>
+        <div id="social-container">
+          <p>Social Midia</p>
+          <i class="fa fa-facebook-f"></i>
+          <i class="fa fa-instagram"></i>
+        </div>
+        
+        <div>
+        <p>Register Staff</p>
+          <a href="/StaffHTML/registerStaff.html" id="register staff">Sign in</a>
+        </div>
+        <script src="/js/login.js"></script> 
+        
+  
+  </body>
+</html>

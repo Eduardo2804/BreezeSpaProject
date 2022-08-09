@@ -1,5 +1,7 @@
 
-/* geral */
+/* general */
+/*login page*/
+
 
 *{
     margin: 0;
@@ -12,7 +14,7 @@
   }
   body {
   
-  background-image: url(../images/logo.png);
+  background-image: url(../images/image_login.jpg);
   background-size: cover;
   background-position: 20%;
   
@@ -151,6 +153,17 @@
     margin-bottom: 10px;
 
 
+
+  }
+
+  /*error message*/
+  #msgError {
+  text-align: center;
+  color: #ff0000;
+  background-color:#ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
 
   }
 

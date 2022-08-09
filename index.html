@@ -1,45 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale = 1.0">
-  <title>Login</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/styles.css">
-<script src="js/script.js" defer></script>
-</head>
-  <body>
-    <div id="login-container">
-     <h1>Login</h1>
-     <form action="">
-      <label for="email">E-mail</label>
-      <input type="email" name="email" id="email" placeholder="Enter your email" autocapitalize="off">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" placeholder="Enter password">
-        <a href="#" id="forgot-pass">Forgot Password</a>
-        <input type="submit" value="Login">
-     </form>
-        <div id="social-container">
-          <p>Social Midia</p>
-          <i class="fa fa-facebook-f"></i>
-          <i class="fa fa-instagram"></i>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Breeze Spa</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/index.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-default header-section">
+            <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="/images/logo.png" width="200" height="150" alt="log top" id="imagehead">
+                </a>
+            </div>
+            <div class="menuoption">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/BookingHTML/menu.html" target="_blank" rel="noopener noreferrer">Treatments</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+         <!--front image in top-->
+         <div>
+
+
+         </div>
+        <div class="cover-section" id="top-button">
+            <div class="container">
+                <div class="row">
+                        <div class="slider-item">
+                          <img src="/images/candles.jpg" id="imagefront">
+    
+                            <h2>“Taking time to do nothing often brings everything into perspective.” (Doe Zantamata)</h2>
+                            <p>Welcome to Breeze Spa our propurse is offer the best spa`s treatments </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="register-container">
-          <p>Register User</p>
-          <a href="register.html" id="register">Sign in</a>
+
+        <div class="benefit-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="section-title">YOUR BENEFITS TO WELL BEING</h2>
+                    </div>
+                </div>
+                <div class="treatments-row">
+                        <h3>Benefit 1</h3>
+                        <a href="#"><img src="/images/body.png" width="207" height="208" class="img-responsive" alt=""></a>
+                        <h2>Body</h2>
+                        <p>Start your day with a wonderful massage.</p>
+                    </div>
+                <div class="treatments-row">
+                        <h3>Benefit 2</h3>
+                        <a href="#"><img src="/images/face.png" width="207" height="208"  class="img-responsive" alt=""></a>
+                        <h2>Face</h2>
+                        <p>Feeling better each day more.</p>
+                    </div>
+                    <div class="treatments-row">
+                        <h3>Benefit 3</h3>
+                        <a href="#"><img src="/images/nails.jpg" width="225" height="226" class="img-responsive"  alt=""></a>
+                        <h2>Nails</h2>
+                        <p>Nails bring color to your world.</p>
+                    </div>
+                    <div class="treatments-row">
+                        <h3>Benefit 4</h3>
+                        <a href="#"><img src="/images/hairs.jpg" width="207" height="208" class="img-responsive"  alt=""></a>
+                        <h2>Hair</h2>
+                        <p>If your hair looks good, you can deal anything</p>
+                    </div>
+                </di>
+            </div>
         </div>
-        <p>Register Staff</p>
-          <a href="registerStaff.html" id="register staff">Sign in</a>
+        <div class="offer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 wow fadeInDown animated">
+                        <a href="/ServicesHTML/booking.html">Make An Appointment</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
-     
+        <div class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="social-media">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">How It Works</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="top-button">
+                            <a href="#top-button" class="scroll"><i class="fa fa-arrow"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
-    </div>
-
-
-
-  </body>
-
-
-
+        <script src="/js/custom.js"></script>
+    </body>
 </html>

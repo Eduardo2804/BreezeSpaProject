@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Register User</title>
+  <h1>Sign in Area</h1>
+</head>
+
+<body id= "registerUser">
+  <form class="registerUser">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="firstName">First Name</label>
+        <input type="text" name="name" class="form-control" id="firstName" placeholder="First Name">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="lastName">Last Name</label>
+        <input type="text" name="name" class="form-control" id="lastName" placeholder="Last Name">
+      </div>
+      <div class="form-group">
+        <label for="genrer">Genrer</label>
+        <input type="radio" name="Genrer" class="form-control" id="genrer" value="male">Male
+        <input type="radio" name="Genrer" value="female">Female
+        <input type="radio" name="genrer" value="neither">doesnt want to say
+      </div>
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" name="address" class="form-control" id="address" placeholder="1234 Main St">
+      </div>
+      <div class="form-row">
+       <div class="form-group col-md-6">
+          <label for="email">Email</label>
+          <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="password">Password</label>
+          <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+        </div>
+      </div>
+       <div class="form-group col-md-2">
+        <label for="phone">Phone</label>
+        <input type="number" name="phoneNumber" class="form-control" id="phoneNumber">
+      </div>
+    </div>
+    <button onclick="registerUser()" type="submit" class="btn btn-primary" id="submit">Submit</button>
+  </form>
+<script src="../js/RegisterUser.js"></script>
+  </body>
+
+
+</html>
