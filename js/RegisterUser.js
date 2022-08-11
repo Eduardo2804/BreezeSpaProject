@@ -1,4 +1,5 @@
 
+
 function registerUser(){
 
 
@@ -7,7 +8,7 @@ function registerUser(){
 
    let myfirstName  = document.querySelector('#firstName').value
    let mylastName = document.querySelector('#lastName').value
-   let mygenrer = document.querySelector('#genrer').value
+   let mygender = document.getElementById("#gender")
    let myaddress = document.querySelector('#address').value
    let myemail = document.querySelector('#email').value
    let mypassword = document.querySelector('#password').value
@@ -15,7 +16,7 @@ function registerUser(){
 
    console.log(myfirstName);
    console.log(mylastName);
-   console.log(mygenrer);
+   console.log(mygender);
    console.log(myaddress);
    console.log(myemail);
    console.log(mypassword);
@@ -30,7 +31,7 @@ function registerUser(){
             
            firstName: myfirstName,
            lastName: mylastName,
-           genrer: mygenrer,
+           gender: mygender,
            address: myaddress,
            email: myemail,
            password: mypassword,

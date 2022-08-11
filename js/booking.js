@@ -4,11 +4,13 @@
 document.addEventListener("DOMContentLoaded", () => {
   
 getTreatement();
+getStaffs();
 
 
 });
 
 let mytreatment = document.querySelector("#treatment");
+let mystaff = document.querySelector("#staff");
 
 //get all the tratments in the spa
 function getTreatement(){
@@ -19,7 +21,23 @@ function getTreatement(){
             let newoption = document.createElement("option");
             let optiontext = document.createTextNode(`${item.category} - ${item.type} - Price €${item.price}`)
             newoption.appendChild(optiontext)
-            mytreatment.appendChild(newoption); 
+            mytreatment.appendChild(newoption);
+        });
+      });
+    }
+
+function getStaffs() {
+
+    fetch ("http://localhost:8080/staff")
+    .then((response) => response.json())
+    .then((data) => {
+      data.map((item) => {
+
+            let staffOption = document.createElement("option");
+            let staffText = document.createTextNode(`${item.firstName} - ${item.job}`)
+            staffOption.appendChild(staffText);
+            mystaff.appendChild(staffOption);
+
     });
 });
 }

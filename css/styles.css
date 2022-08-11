@@ -39,10 +39,10 @@
   
   background-color: white;
   opacity: 0.8;
-  width: 350px;
+  width: 300px;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px 30px;
+  padding: 30px 30px;
   margin-top: 10vh;
   border-radius: 10px;
   text-align: center;
@@ -90,16 +90,17 @@
   display: block;
   
   }
-  input[type="submit"] {
+  button{
 
     text-align:center;
     text-transform: uppercase;
     font-weight: bold;
     border: none;
-    height: 40px;
+    height: 35px;
+    width: 100px;
     border-radius: 20px;
     margin-top: 30px;
-    color: white;
+    color:black;
     background-color: #08558b;
     cursor: pointer;
 
@@ -164,6 +165,18 @@
   padding: 10px;
   border-radius: 4px;
   display: none;
+
+  }
+
+  #registerUser-container{
+
+  position: relative;
+  float: left;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 3%;
+  
+
 
   }
 

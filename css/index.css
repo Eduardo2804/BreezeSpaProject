@@ -1,100 +1,232 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
-body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  background-color:bisque;
+/* Box Model Hack */
+* {
   box-sizing: border-box;
 }
 
-#imagehead {
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
 
-  height: 50px;
-  width: 200px;
+.clear {
+	clear: both;
+}
 
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
 
 }
 
-#imagefront {
 
-  width: 1400px;
-  height: 600px;
-  margin-left: 50px;
-  margin-right: 100px;
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
 }
 
-.menuoption ul {
-  display: flex;
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.menu > li{
+list-style-type:none;
+display:inline; 
+  padding: 0 10px;
+  font-size:20px;
+}
+.second{
+  background-image: url("/images/brooke-lark-kXQ3J7_2fpc-unsplash.jpg");
+  
+  height: 400px; 
+  background-position: left;
+  background-repeat: no-repeat; 
+  background-size:cover;
+  opacity: 85%;
+    
+}
+.font{
+   position: absolute;
+   left: 50px;
+   top:80px; 
+  font-size:30px;
+  text-align:left;
+}
+.font >h5 {
+  font-size:20px;
+}
+
+
+ .boxed {
+  position:absolute;
+ top:360px;
+  height:180px;
+   right:700px;
+ width: 200px;
+  text-align:center;
+  background: rgb(255, 153, 102);
+   
+    
+}
+
+.third, .four{ float:right;
+  width:100%;
+  display: inline-flex; 
+ 
+  list-style-type:  none;
 
   
 }
 
-.menuoption li {
-
-  list-style-type: none;
-  padding-right: 14px;
-
-
+.third li {
+  padding:25px;
+  text-align:center;
+ 
+}
+.four p {
+  font-size:15px;
+  float: right;
+  width: 300px;
+ 
 }
 
-.treatments-row {
-  float: left;
-  width: 25%;
-  display: table;
-
-
-
+.four{
+ space-between:100px;
 }
 
-.contact ul {
+
+.five{ 
+  
+ padding:100px;
+  width:100%;
+   display: inline-flex;
+ 
+  list-style-type:  none;  
+}
+
+.five img{
+height: 250px;
+  width: 200px;
+  margin-right: 222px;
+
+}
+.six{
+  background-image:url("/images/bodymassage.jpg");
+  height:500px;
+  width:100%;
+  
+  background-position:right;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  
+}
+
+.six>h1,h3{
+  text-align: left;
+     position: relative;
+
+  right:-40px;
+  top:100px;
+  font-size:45px;
+
+  
+    
+  
+}
+
+.six1{ background-color:black;
+ color: white;
+ text-align: center;
+   margin-left:40px;
+  font-size:20px;
+}
+.row {
   display: flex;
-
+  flex-wrap: wrap;
+  padding: 0 25px;
 }
 
-.contact li {
- list-style: none;
- padding-right: 14px;
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  max-width: 33.33%;
+  padding: 0 8px;
+}
+
+.column img {
+  margin-top: 25px;
+  padding:5px;
+  vertical-align: middle;
+  width: 70%;
+}
+.seven{
+  text-align:center;
+  padding:6px;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .third,.five,.four {
+    flex-direction: column} 
+  
+}
+
+.four p  {
+ 
+  float:left;
+  
+} 
+
+.youtube {
+  position: relative;
+    top:20px;
+    left: -200px;
+    width: 40%;
+    height: 40%;
+}
+
+h1 {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:black;
+
 
 }
 
 .social-media ul {
-display: flex;
-
-
-}
-
-.social-media li {
-list-style: none;
-padding-right: 14px;
-}
-
-
-
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 40em) {
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
+  display: flex;
+  
+  }
+  
+  .social-media li {
+  list-style: none;
+  padding-right: 14px;
   }
 
-  .featurette-heading {
-    font-size: 50px;
+  #login{
+
+    background-color:aquamarine;
+    width: 110px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 22px;
+    right: 15px;
+    position: absolute;
+    cursor: pointer;
+    
+
   }
-}
-
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
-}
-
-
+  
