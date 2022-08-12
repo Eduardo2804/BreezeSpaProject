@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking</title>
     <link rel="stylesheet" href="/css/hairService.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
   <div class="Mens-hair-services">
-      <h1>Menu Hair Treatments</h1>
+      <h1>Menu Treatments</h1>
   </div>
         
-  <div>
+  <div class="treatment-container">
     <select id="treatment">
       <option disabled selected>Treatment</option>
     </select>
@@ -20,7 +21,7 @@
       <option disabled selected>Staffs</option>
     </select>
   </div>
-        <hr>
+        <br>
         <div class="label-float">
           <input
             type="date"
@@ -46,11 +47,7 @@
           <div class="errormsg" id="daterror"></div>
         
         <hr>  
-        <div class="elem-group">
-          <label for="message">Anything Else?</label>
-          <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important."></textarea>
-        </div>
-        <button onclick="getbooking()" type="submit" id="book">Book here</button>
+        <button id= "loginbt" onclick="getbooking()" type="submit" id="book">Book here</button>
       
       <script src="/js/booking.js"></script>
     </form>

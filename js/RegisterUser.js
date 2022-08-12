@@ -8,11 +8,12 @@ function registerUser(){
 
    let myfirstName  = document.querySelector('#firstName').value
    let mylastName = document.querySelector('#lastName').value
-   let mygender = document.getElementById("#gender")
+   let mygender = document.querySelector('#gender')
    let myaddress = document.querySelector('#address').value
    let myemail = document.querySelector('#email').value
    let mypassword = document.querySelector('#password').value
    let myphone = document.querySelector('#phoneNumber').value
+   
 
    console.log(myfirstName);
    console.log(mylastName);
@@ -21,7 +22,7 @@ function registerUser(){
    console.log(myemail);
    console.log(mypassword);
    console.log(myphone);
-
+   
    fetch("http://localhost:8080/user", {
 
      
@@ -35,7 +36,8 @@ function registerUser(){
            address: myaddress,
            email: myemail,
            password: mypassword,
-           phoneNumber: myphone
+           phoneNumber: myphone,
+          
 
        }),
 
@@ -52,68 +54,6 @@ function registerUser(){
          }); 
 }
 
-
-/*//comunication with API
-
-const listCustomers = async () => {
-
-  const response = await fetch('http://localhost:8080/customers')
-  const data = await response.json()
-  console.log(data)
-
-  data.forEach(item => {
- 
-      const containerCustomerElement = document.getElementById("customer-container")
-
-
-//connecting to element template   
-
-      const template = document.getElementById("listCos")
-
-//cloning the element template from listCustomer html
-      const customerElement = document.importNode(template.content, true)
-
-//fill up the cloned template with data   
-      const customersAtributes = customerElement.querySelectorAll("span")
-      
-      customersAtributes[0].innerText = item.id
-      customersAtributes[1].innerText = item.firstName
-      customersAtributes[2].innerText = item.lastName
-      customersAtributes[3].innerText = item.genrer
-      customersAtributes[4].innerText = item.address
-      customersAtributes[5].innerText = item.phone
-      
-//add the element customer inside the container of customer
-      containerCustomerElement.append(customerElement)
-      
-  })
-}
-
-const listById = () => {
-
-  
-}
-
-
-window.onload = () => {
-
-  listCustomers()
-  
-  const btSelectCustomer = document.getElementById("buttonList")
-
-  btSelectCustomer.onclick = () => {
-
-      
-
-
-
-  }
-
-  
-
-
-
-}*/
 
 
  

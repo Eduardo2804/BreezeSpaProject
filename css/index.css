@@ -117,7 +117,7 @@ display:inline;
 
 .five img{
 height: 250px;
-  width: 200px;
+  width: 320px;
   margin-right: 222px;
 
 }
@@ -168,12 +168,14 @@ height: 250px;
   margin-top: 25px;
   padding:5px;
   vertical-align: middle;
-  width: 70%;
+  width: 100%;
 }
 .seven{
   text-align:center;
   padding:6px;
 }
+
+/*responsive for small devices*/
 @media screen and (max-width: 600px) {
   .column {
     flex: 100%;
@@ -183,6 +185,28 @@ height: 250px;
     flex-direction: column} 
   
 }
+
+/*responsive for devices 780px*/
+@media  screen and (max-width: 780px) {
+  section, aside {
+    width: 100%;
+    padding: 0;
+  
+  }
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {
+
+#wrapper {width:90%;  margin: 0 auto; }
+
+#content {width:70%; float:left; }
+
+#sidebar {width:30%; float:right; }
+  
+
 
 .four p  {
  

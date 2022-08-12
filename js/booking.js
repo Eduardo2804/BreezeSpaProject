@@ -12,8 +12,10 @@ getStaffs();
 let mytreatment = document.querySelector("#treatment");
 let mystaff = document.querySelector("#staff");
 
+
 //get all the tratments in the spa
 function getTreatement(){
+
     fetch("http://localhost:8080/treatments")
     .then((response) => response.json())
     .then((data) => {
@@ -26,6 +28,7 @@ function getTreatement(){
       });
     }
 
+    
 function getStaffs() {
 
     fetch ("http://localhost:8080/staff")

@@ -2,10 +2,6 @@
 function registerTreatments(){
 
 
-
-
-
-
     event.preventDefault();
  
      let categoryService  = document.querySelector('#category').value

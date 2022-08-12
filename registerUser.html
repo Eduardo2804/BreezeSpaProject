@@ -6,22 +6,18 @@
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 
-<body id= "registerUser-container"></body>
-  <form class="registerUser">
-    <div class="form-row">
+<body id= "registerUser-container">
+  <form>
         <label for="firstName">First Name</label>
         <input type="text" name="name" class="form-control" id="firstName" placeholder="First Name" required>
-      </div>
       <div>
         <label for="lastName">Last Name</label>
         <input type="text" name="name" class="form-control" id="lastName" placeholder="Last Name" required>
       </div>
-      <div>
-        <label for="gender" id="gender ">Gender</label>
-        <input type="radio" name="gender"  value="male"> Male
-        <input type="radio" name="gender"  value="female"> Female
-        <input type="radio" name="gender" value="unknow"> doesnt want to say
-      </div>
+        <label for="gender">Gender</label>  
+        <input type="radio" id="male" name="gender" value="Male"/> Male
+        <input type="radio" id="female" name="gender" value="Female"/> Female
+        <input type="radio" id="other" name="gender" value="Other"/> Other  
       <div>
         <label for="address">Address</label>
         <input type="text" name="address" class="form-control" id="address" placeholder="1234 Main St" required>
@@ -38,10 +34,12 @@
         <label for="phone">Phone</label>
         <input type="number" name="phoneNumber" class="form-control" id="phoneNumber">
     </div>
+    
     <button onclick="registerUser()" type="submit" class="btn btn-primary" id="submit">Submit</button>
   </form>
 <script src="/js/RegisterUser.js"></script>
-  </body>
+
+</body>
 
 
 </html>
