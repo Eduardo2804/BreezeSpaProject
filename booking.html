@@ -10,15 +10,17 @@
 </head>
 <body>
   <div class="Mens-hair-services">
-      <h1>Menu Treatments</h1>
+      <h1>Menu Treatments</h1><br>
   </div>
         
   <div class="treatment-container">
+    <h2>Treatment List</h2><br>
     <select id="treatment">
       <option disabled selected>Treatment</option>
     </select>
+    <br><br>
     <select id="staff">
-      <option disabled selected>Staffs</option>
+      <option disabled selected>Staffs</option><br>
     </select>
   </div>
         <br>
@@ -42,12 +44,13 @@
           <option >16:00 - 17:00</option>
           <option >18:00 - 19:00</option>
           <option >19:00 - 20:00</option>
+          <option >10:00 - 20:00</option>
         </select>
         </div>
           <div class="errormsg" id="daterror"></div>
         
         <hr>  
-        <button id= "loginbt" onclick="getbooking()" type="submit" id="book">Book here</button>
+        <button id= "bookbt" onclick="getbooking()" type="submit" >Book here</button>
       
       <script src="/js/booking.js"></script>
     </form>
