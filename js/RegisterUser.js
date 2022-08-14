@@ -1,5 +1,5 @@
 
-
+//Function called when button to book is clicked
 function registerUser(){
 
 

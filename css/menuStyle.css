@@ -1,9 +1,10 @@
 
-
-.images {
-    width: 100%;
-    display:inline-block;
-    vertical-align: middle;
+.row {
+    width: 20%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     
 }
 

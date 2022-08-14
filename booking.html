@@ -13,7 +13,7 @@
       <h1>Menu Treatments</h1><br>
   </div>
         
-  <div class="treatment-container">
+  <div class="treatment-container" id="treatment-container">
     <h2>Treatment List</h2><br>
     <select id="treatment">
       <option disabled selected>Treatment</option>
@@ -29,7 +29,7 @@
             type="date"
             id="date"
             value="date"
-            format="DD/MM/YYYY"
+            format="yyyy-MM-dd"
             placeholder="DD/MM/YYYY"
           >
           <div class="errormsg" id="errordate"></div>
@@ -51,6 +51,9 @@
         
         <hr>  
         <button id= "bookbt" onclick="getbooking()" type="submit" >Book here</button>
+        <br><br>
+      <div class="logoandtext"><a href="/index.html">HOME PAGE</a></div>
+      <div class="container col-11 col-sm-8 col-md-6 col-lg-6 containerhidden" id="thankscontainer"></div>
       
       <script src="/js/booking.js"></script>
     </form>
