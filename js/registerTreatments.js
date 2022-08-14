@@ -1,4 +1,5 @@
 
+//Function called when button to book is clicked
 function registerTreatments(){
 
 
@@ -13,7 +14,7 @@ function registerTreatments(){
      console.log(serviceType);
      console.log(priceService);
      
- 
+     
      fetch("http://localhost:8080/treatments", {
  
        
