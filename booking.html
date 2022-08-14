@@ -13,7 +13,7 @@
       <h1>Menu Treatments</h1><br>
   </div>
         
-  <div class="treatment-container" id="treatment-container">
+  <div class="treatmentcontainer" id="treatmentcontainer">
     <h2>Treatment List</h2><br>
     <select id="treatment">
       <option disabled selected>Treatment</option>
@@ -22,8 +22,8 @@
     <select id="staff">
       <option disabled selected>Staffs</option><br>
     </select>
-  </div>
-        <br>
+  
+        <br><br>
         <div class="label-float">
           <input
             type="date"
@@ -52,11 +52,20 @@
         <hr>  
         <button id= "bookbt" onclick="getbooking()" type="submit" >Book here</button>
         <br><br>
+  </div>
       <div class="logoandtext"><a href="/index.html">HOME PAGE</a></div>
-      <div class="container col-11 col-sm-8 col-md-6 col-lg-6 containerhidden" id="thankscontainer"></div>
+
+      <!--container will appear after booking-->
+
+      <div class="container containerhidden" id="thankscontainer">
+        <h1>Booked! Thank you to Choising us </h1>
+        <img src="/images/logoBreeze.jpg">
+        <br><br>
+        <button><a href="/booking.html">Book Again</a></button>
+      </div>
+    
       
       <script src="/js/booking.js"></script>
-    </form>
 
 
 </body>

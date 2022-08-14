@@ -51,6 +51,11 @@ function registerUser(){
          })
          .then(function (data) {
           console.log(data)
+          let usercontainer = document.querySelector("#usercontainer");
+          let msgcontainer = document.querySelector("#tkscontainer");
+          usercontainer.classList.add("containerhidden");
+          msgcontainer.classList.remove("containerhidden");
+          
          }); 
 }
 

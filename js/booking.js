@@ -117,12 +117,18 @@ bookdate.setAttribute("min", mindate);
             return response.json();
           })
           .then(function (data) {
+              console.log(data);
+          let bookingcontainer = document.querySelector("#treatmentcontainer");
+          let thankscontainer = document.querySelector("#thankscontainer");
+          bookingcontainer.classList.add("containerhidden");
+          thankscontainer.classList.remove("containerhidden");
            
-           console.log(data);
+          
           
   
       });
   }
+
 
         
     

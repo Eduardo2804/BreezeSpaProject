@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
     <body id="registerTreatments">
+      <div class="container" id="trdcontainer">
         <form class="registerTreatments">
           <div class="form-row">
             <div class="form-group col-md-6">
@@ -25,7 +26,17 @@
             </div>
           <button onclick="registerTreatments()" type="submit" class="btn btn-primary" id="submit">Submit</button>
         </form>
+      </div>
+
+      <!--Hidden container will apear when treatment is registered-->
+
+      <div class="container containerhidden" id="registeredcontainer">
+        <h1>Treatment Registered </h1>
+        <br><br>
+        <button><a href="/index.html">Home Page</a></button>
+      </div>
           <script src = "/js/registerTreatments.js"></script>
+          <button><a href="/index.html">Home Page</a></button>
       </body>
       
       

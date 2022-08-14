@@ -42,6 +42,10 @@ function registerStaff(){
           })
           .then(function (data) {
            console.log(data)
+           let staffcontainer = document.querySelector("#staffcontainer");
+          let msgcontainer = document.querySelector("#registeredcontainer");
+          staffcontainer.classList.add("containerhidden");
+          msgcontainer.classList.remove("containerhidden");
           }); 
 }
 

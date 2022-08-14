@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 
-<body id="registerStaff">
-  <form action="/staff" class="registerStaff" method="post">
+<body>
+  <div class="staffcontainer" id="staffcontainer">
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="firstName">First Name</label>
@@ -23,7 +23,16 @@
         <input type="text" name="job" class="form-control" id="job" placeholder="set a role">
       </div>      
     <button onclick="registerStaff()" type="submit" class="btn btn-primary" id="submit">Submit</button>
-  </form>
+  </div>
+  </div>
+
+  <!--container will appear after booking-->
+      
+  <div class="container containerhidden" id="registeredcontainer">
+    <h1>Staff Registered </h1>
+    <br><br>
+    <button><a href="/index.html">Home Page</a></button>
+  </div>
     <script src = "/js/registerStaff.js"></script>
 </body>
 

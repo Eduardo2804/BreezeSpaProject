@@ -38,5 +38,10 @@ function registerTreatments(){
            })
            .then(function (data) {
             console.log(data)
+            let treatmentcontainer = document.querySelector("#trdcontainer");
+            let thankscontainer = document.querySelector("#registeredcontainer");
+            treatmentcontainer.classList.add("containerhidden");
+            thankscontainer.classList.remove("containerhidden");
+             
            }); 
  }
